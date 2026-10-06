@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Python Developer – Testcorp Ltd</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>body{font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px}label{display:block;margin-top:12px}input,textarea{width:100%;padding:8px}</style>
+</head>
+<body>
+  <h1>Junior Python Developer</h1>
+  <p><strong>Company:</strong> Testcorp Ltd (test listing, not a real job)</p>
+  <p><strong>Location:</strong> Lagos, Nigeria (Remote)</p>
+  <h2>About the role</h2>
+  <p>We are looking for a junior Python developer to build backend APIs with FastAPI and PostgreSQL.</p>
+  <h2>Requirements</h2>
+  <ul><li>Python</li><li>FastAPI or Django</li><li>SQL / PostgreSQL</li><li>Git</li></ul>
+
+  <h2>Apply</h2>
+  <form id="apply" onsubmit="event.preventDefault(); if(!grecaptcha.getResponse()){alert('Please complete the CAPTCHA');return;} document.getElementById('apply').style.display='none'; document.getElementById('done').style.display='block';">
+    <label>Full name <input name="full_name" required></label>
+    <label>Email <input type="email" name="email" required></label>
+    <label>Phone <input name="phone"></label>
+    <label>Why are you interested? <textarea name="motivation"></textarea></label>
+    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" style="margin-top:16px"></div>
+    <button type="submit" style="margin-top:16px">Submit application</button>
+  </form>
+  <div id="done" style="display:none"><h2>Thank you! Your application has been received.</h2></div>
+</body>
+</html>
